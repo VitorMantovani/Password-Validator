@@ -1,13 +1,13 @@
 export class SpecialCharsValidator {
-  constructor(private password: string, private specialChars: string) {}
+  constructor(private asciiCodes: number[], private specialChars: string) {}
 
   validateSpecialChars(): boolean | string {
-    const passwordCharsArray = this.password.split("");
     const specialCharsArray = this.specialChars.split("");
 
-    const specialCharsQuantity = passwordCharsArray.reduce((acc, curr) => {
-      const isIncluded = specialCharsArray.includes(curr);
-      if (isIncluded) acc += 1;
+    const specialCharsQuantity = this.asciiCodes.reduce((acc, curr) => {
+      const passwordChar = String.fromCharCode(curr);
+      const isIncluded = specialCharsArray.includes(passwordChar);
+      if (isIncluded) acc ++;
       return acc;
     }, 0);
 
