@@ -3,6 +3,16 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+- [:page_facing_up: Explicação](#page_facing_up-explicação)
+- [🚀 Tecnologias](#tecnologias)
+- [:closed_book: Como usar?](#closed_book-como-usar)
+- [🤝 Colaboradores](#colaboradores)
+- [📝 Licença](#licença)
+
+<!-- /code_chunk_output -->
+
 
 > Nesse desafio, você deverá construir um método/função que deve conseguir receber uma senha e retornar se a mesma é válida, dadas algumas validações.
 
