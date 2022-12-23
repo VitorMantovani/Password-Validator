@@ -1,11 +1,12 @@
 export class LenghtValidator {
-  constructor(private password: string, private minLen: number, private maxLen: number) {}
+  constructor(
+    private password: string,
+    private minLen: number,
+    private maxLen: number
+  ) {}
 
-  validateLength(): boolean | string {
+  validateLength(): boolean {
     const passwordLength = this.password.length;
-    if (passwordLength >= this.minLen && passwordLength <= this.maxLen) {
-        return true;
-    }
-    return "Tamanhao inválido!";
+    return passwordLength >= this.minLen && passwordLength <= this.maxLen;
   }
 }
