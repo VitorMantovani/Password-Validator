@@ -3,6 +3,11 @@ export class SequenceValidator {
 
   validateCharsSequence(): boolean {
     const charsSequenceCount = this.asciiCodes.reduce((acc, code, idx) => {
+      const isSpecialCharacter =
+        (code >= 33 && code <= 47) || (code >= 58 && code <= 64);
+      if (isSpecialCharacter) {
+        return acc;
+      }
       const middle = this.asciiCodes[idx + 1];
       const last = this.asciiCodes[idx + 2];
       const passwordThreeCharsSequence = String.fromCharCode(
