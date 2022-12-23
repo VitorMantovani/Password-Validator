@@ -6,7 +6,8 @@ import { SpecialCharsValidator } from "./validators/SpecialCharsValidator";
 
 type PasswordFeedback = { result: boolean; errors: string[] };
 
-const PASSWORD = "rZpy*D95&WBE'Z&B";
+const PASSWORD = "rZpy#$%D95&WBE'ABc";
+const TO_LOWER_CASE__PASSWORD = PASSWORD.toLowerCase();
 const PASSWORD_MIN_LENGTH = 16;
 const PASSWORD_MAX_LENGHT = 32;
 const SPECIAL_CHARS = '[]!@#$%^&*(),.?":{}|<>';
@@ -29,7 +30,8 @@ const specialCharsValidator = new SpecialCharsValidator(
 
 const caseValidator = new CaseValidator(asciiCodesArray);
 
-const sequenceValidator = new SequenceValidator(asciiCodesArray);
+const lowerCaseAsciiArray = convertToAscii.convertCharsToAscii("lower");
+const sequenceValidator = new SequenceValidator(lowerCaseAsciiArray);
 
 const isLenghtRight = lenghtValidator.validateLength();
 if (!isLenghtRight) {
