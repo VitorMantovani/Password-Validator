@@ -47,10 +47,10 @@ $ git clone https://github.com/VitorMantovani/Password-Validator
 $ cd PASSWORDVALIDATOR
 
 # Install dependencies
-$ yarn or npm init
+$ yarn 
 
 # Run the project
-$ yarn start or npm start
+$ yarn dev
 
 
 ```
