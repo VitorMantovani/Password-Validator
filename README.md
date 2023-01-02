@@ -7,7 +7,7 @@
 
 - [:page_facing_up: Explicação](#page_facing_up-explicação)
 - [🚀 Tecnologias](#tecnologias)
-- [:closed_book: Como usar?](#closed_book-como-usar)
+- [:closed_book: Como usar!?](#closed_book-como-usar)
 - [🤝 Colaboradores](#colaboradores)
 - [📝 Licença](#licença)
 
